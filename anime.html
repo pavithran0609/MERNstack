@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Bird Animation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background: linear-gradient(to bottom, #87CEEB, #87CEFA);
+        }
+        .sky {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .bird {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            animation: fly-across 8s linear infinite;
+        }
+        .wing {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+            animation: flap 0.5s ease-in-out infinite alternate;
+        }
+        .left-wing {
+            transform: rotate(-45deg);
+            left: -25px;
+        }
+
+        .right-wing {
+            transform: rotate(45deg);
+            right: -25px;
+        }
+
+        @keyframes flap {
+            0% {
+                transform: rotate(-45deg) translateY(0);
+            }
+            100% {
+                transform: rotate(-45deg) translateY(-20px);
+            }
+        }
+        @keyframes fly-across {
+            0% {
+                left: 0%;
+                top: 30%;
+            }
+            25% {
+                top: 20%;
+            }
+            50% {
+                top: 40%;
+            }
+            75% {
+                top: 10%;
+            }
+            100% {
+                left: 100%;
+                top: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        <div class="bird">
+            <div class="wing left-wing"></div>
+            <div class="wing right-wing"></div>
+        </div>
+    </div>
+</body>
+</html>
