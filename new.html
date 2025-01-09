@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Responsive Media Page</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                line-height:1.5;
+                background:linear-gradient(120deg,#fcf ,#6b8ffe);
+            }
+            header{
+                text-align: center;
+                padding: 50px 22px;
+                background: linear-gradient(130deg,#fcf,#333);
+                border-radius: 40px;
+            }
+            header h1{
+                font-size: 3rem;
+                margin-bottom: 35px;
+            }
+            header p{
+                font-size: 2rem;
+                color:white;
+                margin-bottom: 30px;
+            }
+            header .mda{
+                background:#fcf;
+                color:#333;
+                padding: 5px 5px;
+                text-decoration: none;
+                font-size: 1rem;
+                border-radius: 35px;
+                transition:transform 0.5s,box-shadow 0.7s;
+            }
+            header .mda:hover{
+                transform:translateY(-6px);
+                box-shadow: 0 10px 20px rgba(200,65,88,1);
+            }
+            .grid-View{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 25px;
+                padding: 50px 30px;
+                max-width: 1150px;
+            }
+            .grid{
+                background:#fcf;
+                padding: 18px;
+                border-radius: 18px;
+                text-align: center;
+                transition:transform 0.5s,box-shadow 0.7s;
+            }
+            .grid:hover{
+                transform:translateY(-7px);
+                box-shadow:0 12px 25px #333;
+            }
+            .grid h2{
+                font-size: 1.7rem;
+                margin-bottom:18px ;
+                color:blueviolet;
+            }
+            .grid p{
+                font-size: 1rem;
+                color: dimgrey;
+            }
+            footer{
+                text-align: center;
+                padding: 20px;
+                background: #ffffff;
+                font-weight:bold;
+            }
+            @media(max-width:1150px){
+                .grid-View{
+                    grid-template-columns: repeat(2,0.8fr);
+                }
+                header h1{
+                    font-size: 2.5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Landing Page</h1>
+            <p>fvdmmdffkvmdfmvf vmdlml ddlfme </p>
+            <a href="#" class="mda">Let's Begin</a>
+        </header>
+        <section class="grid-View">
+            <div class="grid">
+                <h2>Discover the First option</h2>
+                <p>ffdjsofjdsfjf dfdslfdskfl dfsffddd</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Seond option</h2>
+                <p>asfasasdwdsad eweweqw qwqddww wqdwd </p>
+            </div>
+            <div class="grid">
+                <h2>Discover the third option</h2>
+                <p>dfeffeewrdfef fefscdsfef fgregrg eewfenlkjioj</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the fourth option</h2>
+                <p>dfeffeewrdfef fefscdsfef fgregrg eewfenlkjioj</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the fifth option</h2>
+                <p>dfeffeewrdfef fefscdsfef fgregrg eewfenlkjioj</p>
+            </div>
+        </section>
+        <footer>
+            <p style="text-align: center;">2025 Responsive Design.All Rights Reseved<a href="#"></a></p>
+        </footer>
+    </body>
+</html>
