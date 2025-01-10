@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <form id="myform">
+            <div class="form-one"></div>
+        </form>
+        <script>
+            document.getElementById("myform").addEventListener("submit",function(event)
+        
+            event.preventDefault();
+            document.getElementById("usernameError").textContent="";
+            document.getElementById("emailError").textContent="";
+            document.getElementById("passwordError").textContent="";
+
+            const username=document.getElementById("username").value.trim();
+            const email=document.getElementById("email").value.trim();
+            const password=document.getElementById("password").value.trim();
+            let valid=true
+            if(username ==""){
+                document.getElementById("usernameError").textContent="username is required ";
+                valid=false;
+            }
+            if(email ==""){
+                document.getElementById("usernameError").textContent="username is required ";
+                valid=false;
+            }
+            if(password ==""){
+                document.getElementById("passwordError").textContent="valid password is required ";
+                valid=false;
+
+            }
+
+
+    )
+        </script>
+    </body>
+</html>
