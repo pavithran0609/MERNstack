@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js" defer></script>
+    <nav>
+      <div class="logo">PAVITHRAN<span> THIRUSELVAM</span></div>
+      <ul class="links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="intro">
+        <div class="image">
+          <img
+            src="WhatsApp Image 2025-01-19 at 9.17.46 PM.jpeg"
+            alt="Profile Picture"
+          />
+        </div>
+        <div class="content">
+          <h1>Welcome to My <span>Portfolio</span></h1>
+          <p>
+            I am a passionate developer eager to create impactful solutions.
+            Let's explore my journey and projects together!
+          </p>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm a developer with a focus on creating efficient and innovative
+        solutions. I specialize in full-stack development and enjoy solving
+        challenging problems.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="progress-bar"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="progress-bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress-bar"><span style="width: 75%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Project TaskManager</h3>
+          <p>An innovative solution for task management and collaboration.</p>
+          <p>Technologies: JavaScript, React, Node.js</p>
+          <a href="https://E-CommerceWebsite.com" target="_blank"
+            >Live Project</a
+          >
+          |
+          <a
+            href="https://github.com/lassiecoder/E-CommerceWebsite"
+            target="_blank"
+            >GitHub Repo</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Project E-CommerceWebsite</h3>
+          <p>A cutting-edge e-commerce platform with personalized features.</p>
+          <p>Technologies: JavaScript, Vue.js, Firebase</p>
+          <a href="https://htm.com" target="_blank">Live Project</a>
+          |
+          <a href="https://github.com/developit/htm" target="_blank"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 PAVITHRAN THIRUSELVAM. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
